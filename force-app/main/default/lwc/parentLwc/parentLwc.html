@@ -1,0 +1,7 @@
+<template>
+    <lightning-card label="ParentCard">
+        <lightning-input label="Counter" value={counterVal} onchange={handleChange}></lightning-input>
+        <c-child-lwc childcounter={counterVal}></c-child-lwc>
+    </lightning-card>
+    
+</template>

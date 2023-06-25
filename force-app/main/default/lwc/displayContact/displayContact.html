@@ -1,0 +1,25 @@
+<template>
+    <lightning-card label="DisplayContact">
+        <lightning-input label = "Input" id = "Input" onchange={handleChange}></lightning-input>
+        <lightning-button label="Submit" id="Submit" onclick={handleSubmit}></lightning-button>
+        <lightning if:true="contacts">
+            <lightning-datatable
+                key-field="id"
+                data={Contacts}
+                columns={columns}>
+        </lightning-datatable>
+
+        
+        x=5;
+        for(i=0;i<10;i++){
+
+
+        }
+
+
+        </lightning>
+        
+    </lightning-card>
+    
+    
+</template>

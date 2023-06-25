@@ -1,0 +1,14 @@
+<template>
+    <lightning-card>
+        
+            <lightning-input name="Input" label="Input Value" onchange={handleChange}></lightning-input>
+            <lightning-button name="submit" label="submit" onclick={handleClick}></lightning-button>
+        <template if:true={data}>
+            <lightning-datatable key-field="Id" columns={columns} data={data}></lightning-datatable>
+        </template>
+        <template if:true={ListAcc}>
+            <lightning-datatable key-field="Id" data={ListAcc.data} columns={columns}></lightning-datatable>
+        </template>
+    </lightning-card>
+    
+</template>

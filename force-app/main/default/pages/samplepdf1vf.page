@@ -1,0 +1,8 @@
+<apex:page standardcontroller="Account" extensions="samplepdf1" renderAs="pdf">
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!accountrecord}" var="a">
+            <apex:column value="{!a.name}"/>
+        
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

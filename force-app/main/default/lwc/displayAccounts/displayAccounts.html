@@ -1,0 +1,9 @@
+<template>
+    <template if:true={ListAcc}>
+        <p>
+            Display {ListAcc}
+        </p>
+        <lightning-datatable  key-field="Id" data={ListAcc.data} columns={colunmns}></lightning-datatable>
+    </template>
+    
+</template>

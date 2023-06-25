@@ -1,0 +1,14 @@
+<template>
+    <div>
+        <lightning-input label="Enter Contact Name" id="ContactName" onchange={handleChange}></lightning-input>
+        <lightning-button name="Submit" label = "Submit" id="Submit" onclick={handleclick}></lightning-button>
+        <template if:true = {Contacts}>
+            <p> contacts available</p>
+            <template for:each = {Contacts} for:item="con">
+                <!-- <p key={acc.Id}>{acc.Name}</p> -->
+                <p key={con.Id}>{con.Name}</p>
+            </template>
+        </template>
+    </div>
+    
+</template>

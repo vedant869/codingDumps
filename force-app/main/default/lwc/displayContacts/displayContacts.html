@@ -1,0 +1,29 @@
+<template>
+    <lightning-card>
+        <div>
+            <lightning-input label="Input String" field-name="Input" onchange={handleChange}></lightning-input>
+            <lightning-button label="Submit" name="submit" onclick={handleSubmit}></lightning-button>
+            <!--<template if:true={cons}>
+                        <template for:each={cons} for:item="conLists">
+                            <lightning-layout vertical-align="center" key={conLists.id}>
+                                <li>
+                                    {conLists.Name}
+                                    {conLists.Phone}
+                                </li>
+
+
+                            </lightning-layout>
+                           
+
+                        </template>
+            </template>-->
+            <template if:true={cons}>
+                <lightning-datatable key-field="Id" data={cons} columns={columns}>
+
+                </lightning-datatable>
+            </template>
+
+        </div>
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,6 @@
+<apex:page standardcontroller="Account" extensions="samplepdf1" renderAs="pdf">
+    <apex:pageBlock >
+
+    </apex:pageBlock>
+   
+</apex:page>

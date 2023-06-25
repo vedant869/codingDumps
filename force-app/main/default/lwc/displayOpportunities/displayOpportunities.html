@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="displayOpps">
+        
+        <template lwc:if={oppData} >
+           
+           
+            <template for:each={oppData} for:item="opportunity">
+                
+                <p key={opportunity.id}>{opportunity.Name}</p>
+            </template>
+        </template>
+        <!-- <template lwc:elseif={opportunity.error}>
+            <c-error-panel errors={opportunity.error}></c-error-panel>
+        </template> -->
+    </lightning-card>
+    
+</template>

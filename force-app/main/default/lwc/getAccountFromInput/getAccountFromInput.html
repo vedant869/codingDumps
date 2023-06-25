@@ -1,0 +1,14 @@
+<template>
+    <div>
+        <lightning-input label="Enter Account Name" id="AccountName" onchange={handleChange}></lightning-input>
+        <lightning-button label="Submit" name="Submit" onclick={handleSubmit}></lightning-button>
+        <template if:true={Accounts}>
+            <template for:each={Accounts} for:item="acc">
+                <p key={acc.Id}>{acc.Name}</p>
+                <p key={acc.Phone}>{acc.Phone}</p>
+            </template>
+        </template>
+    </div>
+    
+    
+</template>
